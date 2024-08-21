@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin:  0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: wheat;
+
+    justify-content: space-around;
+}
+nav h2{
+    color: red;
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+    font-weight: 800;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+section{
+    background: linear-gradient(to bottom, rgb(231, 139, 139), rgb(126, 63, 63));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+section .list{
+    
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.397);
+}
+section form input{
+    width:calc(100% - 12px);
+    height: 40px;
+    padding: 5px;
+    border: 2px solid gray;
+
+}
+section form input:focus{
+    border: 2px solid  rgba(125, 125, 255, 0.831);
+    outline: 3px solid rgba(125, 125, 255, 0.525);
+}
+
+#list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px 0;
+}
+#list .list-item{
+    background-color: #f9f9f9;
+    padding : 40px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.397);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 200px;
+}
+
+#list .list-item h3{
+    font-size: 20px;
+    color: #333;
+}
+
+#list .list-item .pending{
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    padding: 5px;
+}
+
+#list .list-item .done{
+    font-size: 16px;
+    color: white;
+    background-color: green;
+    padding: 5px;
+}
+
+#list .list-item button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+ transition: all 0.3s ease;
+}
+
+#list .list-item button.delete{
+    background-color: red;
+}
+
+#list .list-item button:hover{
+    background-color: rgb(40, 4, 4);
+}
+
+.edit-popup{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    
+}
