@@ -1,51 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .login-form {
-            width: 300px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .login-form input[type="text"],
-        .login-form input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-        .login-form input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-        .login-form input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .login-form {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .login-form input[type="text"],
+      .login-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      .login-form input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .login-form input[type="submit"]:hover {
+        background-color: #45a049;
+      }
     </style>
 
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="assets/js/login.js"></script>
-</head>
-<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/login.js"></script>
+  </head>
+  <body>
     <div class="login-form">
-        <h2>Login</h2>
-        <form action="/submit_login" method="post">
-            <input type="text" name="email" placeholder="email" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
-            <a href="/register.html"> register here</a>
-        </form>
+      <h2>Login</h2>
+      <form action="/submit_login" method="post">
+        <input type="text" name="email" placeholder="email" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" value="Login" />
+        <a href="/register.html"> register here</a>
+      </form>
     </div>
-</body>
+    <script>
+//       class Product {
+//         constructor(id, name, price) {
+//           this.id = id;
+//           this.name = name;
+//           this.price = price;
+//         }
+//       }
+//       class ShoppingCardItem {
+//         constructor(product, quantity) {
+//         this.product = product;
+//           this.quantity = quantity;
+//         }
+//         getTotalPrice() {
+//           return this.price * this.quantity;
+//         }
+//       }
+//       class ShoppingCard {
+//         constructor(...args) {
+//           this.items = args;
+//         }
+//         totalItems() {
+//           return this.items.length;
+//         }
+//         addItem(item) {
+//           this.items.push(item);
+//         }
+//         RemoveItem(ele) {
+//           this.items = this.items.filter((item) => item.product.id!=ele.product.id);
+//         }
+//         Display(){
+//             this.items.forEach((item) =>console.log(`${item.product.name} ${item.quantity}`));
+//         }
+//       }
+
+// const keybord=new Product(1,"keybord",200)
+// const mouse=new Product(2,"mouse",400)
+//       const p1=new ShoppingCardItem(keybord,4)
+//       const p2=new ShoppingCardItem(mouse,5)
+//       const card=new ShoppingCard()
+//       card.addItem(p1)
+//       card.addItem(p2)
+//       card.RemoveItem(p1)
+//    card.Display()
+    </script>
+  </body>
 </html>

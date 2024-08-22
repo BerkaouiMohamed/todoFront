@@ -20,11 +20,13 @@ window.onload = function () {
         password: $password,
       })
       .then((res) => {
-        console.log(res);
-        
+   
           if (res.data.status === "success") {
               alert("loged in successfully");
               localStorage.setItem("token", res.data.data);
+              if (res.data.role){
+                localStorage.setItem('a',"1")
+              }
               window.location.href = "/index.html";
           } else {alert(" failed")}
       });

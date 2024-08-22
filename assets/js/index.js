@@ -1,5 +1,11 @@
 window.addEventListener("DOMContentLoaded", () => {
   main();
+  if(localStorage.getItem('a')){
+    document.getElementsByClassName('admin')[0].style.display="block"
+  }
+  else{
+     document.getElementsByClassName('admin')[0].style.display="none"
+  }
 });
 
 var todos
@@ -38,7 +44,7 @@ async function main() {
 }
 
  function handleLogout() {
-  localStorage.removeItem("token");
+  localStorage.clear();
   window.location.href = "/login.html";
 }
 
